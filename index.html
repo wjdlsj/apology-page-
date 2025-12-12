@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>致我最爱的人</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-attachment: fixed;
+        }
+
+        .apology-card {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .heart {
+            color: #ff6b6b;
+            font-size: 60px;
+            margin-bottom: 20px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        h1 {
+            color: #ff6b6b;
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .apology-content {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.1em;
+            margin: 25px 0;
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-weight: bold;
+            color: #ff6b6b;
+            font-size: 1.2em;
+        }
+
+        .flowers {
+            font-size: 30px;
+            margin: 20px 0;
+        }
+
+        .message {
+            background: #fff5f5;
+            border-left: 4px solid #ff6b6b;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: left;
+            border-radius: 0 10px 10px 0;
+        }
+
+        .promise-list {
+            text-align: left;
+            margin: 25px 0;
+            padding: 0 20px;
+        }
+
+        .promise-list li {
+            margin: 15px 0;
+            position: relative;
+            padding-left: 20px;
+        }
+
+        .promise-list li:before {
+            content: "♥";
+            color: #ff6b6b;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .button-container {
+            margin-top: 30px;
+        }
+
+        .forgive-button {
+            background: linear-gradient(to right, #ff6b6b, #ff8e8e);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+        }
+
+        .forgive-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(255, 107, 107, 0.5);
+        }
+
+        .forgive-button:active {
+            transform: translateY(1px);
+        }
+
+        @media (max-width: 600px) {
+            .apology-card {
+                padding: 25px 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .apology-content {
+                font-size: 1em;
+            }
+        }
+        
+        /* 操作说明 */
+        .instructions {
+            background: #e8f4ff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        
+        .instructions h3 {
+            color: #ff6b6b;
+            margin-bottom: 10px;
+        }
+        
+        .instructions ol {
+            padding-left: 20px;
+        }
+        
+        .instructions li {
+            margin: 10px 0;
+        }
+        
+        .stats {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="apology-card">
+        <div class="heart">❤️</div>
+        <h1>老婆，我错了！</h1>
+        
+        <div class="apology-content">
+            <p>我知道我的行为让你伤心了，这完全是我的错。</p>
+            <p>回想起来，我深深地意识到自己有多么不应该。</p>
+        </div>
+        
+        <div class="message">
+            <p>这些天我想了很多，我意识到：</p>
+            <p>你是我生命中最重要的人，而我却因为一些小事忽略了你的感受。</p>
+            <p>我应该更加珍惜你、理解你、爱护你，而不是让你难过。</p>
+        </div>
+        
+        <div class="flowers">🌹 🌹 🌹</div>
+        
+        <div class="apology-content">
+            <p>我真的知道错了，请你原谅我这一次。</p>
+            <p>我愿意为了我们的未来变得更好，改正自己的缺点。</p>
+        </div>
+        
+        <ul class="promise-list">
+            <li>我会更加关心你的感受，认真倾听你的想法</li>
+            <li>我会控制好自己的情绪，不再为小事与你争执</li>
+            <li>我会主动承担更多家庭责任，给你更多支持</li>
+            <li>我会珍惜我们在一起的每一天，让生活充满温馨和快乐</li>
+        </ul>
+        
+        <div class="apology-content">
+            <p>希望你能给我一次机会，让我们重新开始，一起走过未来的美好时光。</p>
+        </div>
+        
+        <div class="button-container">
+            <button class="forgive-button" onclick="forgiveMe()">原谅我</button>
+        </div>
+        
+        <div class="signature">
+            <p>永远爱你的冬</p>
+            <p id="current-date"></p>
+        </div>
+    </div>
+
+    <script>
+        // 显示当前日期
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('zh-CN', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        
+        // 处理原谅按钮点击事件
+        function forgiveMe() {
+            // 显示感谢信息
+            alert("谢谢你原谅我！\n\n你的回复对我非常重要，\n我会用行动证明我的改变。\n\n我爱你，我们会越来越好的！");
+        }
+    </script>
+</body>
+</html>
